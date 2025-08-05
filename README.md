@@ -23,7 +23,7 @@ This application was developed in the **LabVIEW** environment and utilizes the *
 
 ## Communication Details
 
-### Server (SerwerUDP.vi)
+### Server (ServerUDP.vi)
 
 - Sends UDP packets to `localhost` on port `61555`
 - Uses port `61550` as sender
@@ -35,7 +35,7 @@ This application was developed in the **LabVIEW** environment and utilizes the *
 - Cluster is flattened to string before sending
 - Terminates automatically after sending the "end" message
 
-### Client (KlientUDP.vi)
+### Client (ClientUDP.vi)
 
 - Listens on UDP port `61555`
 - Receives string, unflattens it into a cluster
@@ -57,8 +57,8 @@ This application was developed in the **LabVIEW** environment and utilizes the *
 ## Usage
 
 1. Open the LabVIEW project.
-2. Run `SerwerUDP.vi`.
-3. Run `KlientUDP.vi`.
+2. Run `ServerUDP.vi`.
+3. Run `ClientUDP.vi`.
 4. Observe the data exchange.
 5. Wait 1 minute for auto shutdown **or** use the client to trigger remote termination.
 
